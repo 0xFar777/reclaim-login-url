@@ -9,10 +9,11 @@ const Home = () => {
 
   const handleClick = () => {
     if (confirmUrl) {
-      const link = document.createElement("a");
-      link.href = confirmUrl;
-      link.rel = "noopener noreferrer";
-      link.click();
+      // const link = document.createElement("a");
+      // link.href = confirmUrl;
+      // link.rel = "noopener noreferrer";
+      // link.click();
+      window.open(confirmUrl, "_blank")
     }
   };
 
@@ -34,7 +35,7 @@ const Home = () => {
         }}
         placeholder="Please input link..."
       ></input>
-      <a href={`${confirmUrl}`} onclick="event.preventDefault()">
+      <a href={`${confirmUrl}`} target="_blank">
         <button
           style={{
             margin: "20px 47vw",
