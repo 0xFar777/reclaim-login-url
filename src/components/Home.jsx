@@ -34,22 +34,23 @@ const Home = () => {
         }}
         placeholder="Please input link..."
       ></input>
-      <button
-        onClick={handleClick}
-        style={{
-          margin: "20px 47vw",
-          padding: "10px 15px",
-          border: "none",
-          borderRadius: "5px",
-          backgroundColor: "#00F",
-          color: "white",
-          fontSize: "16px",
-          cursor: "pointer",
-          transition: "background-color 0.3s",
-        }}
-      >
-        Go To
-      </button>
+      <a href={`${confirmUrl}`} onclick="event.preventDefault()">
+        <button
+          style={{
+            margin: "20px 47vw",
+            padding: "10px 15px",
+            border: "none",
+            borderRadius: "5px",
+            backgroundColor: "#00F",
+            color: "white",
+            fontSize: "16px",
+            cursor: "pointer",
+            transition: "background-color 0.3s",
+          }}
+        >
+          Go To
+        </button>
+      </a>
     </div>
   );
 };
