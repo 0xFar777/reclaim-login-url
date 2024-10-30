@@ -13,7 +13,7 @@ const Home = () => {
       // link.href = confirmUrl;
       // link.rel = "noopener noreferrer";
       // link.click();
-      window.open(confirmUrl, "_blank")
+      window.open(confirmUrl, "_blank");
     }
   };
 
@@ -35,23 +35,22 @@ const Home = () => {
         }}
         placeholder="Please input link..."
       ></input>
-      <a href={`${confirmUrl}`} target="_blank">
-        <button
-          style={{
-            margin: "20px 47vw",
-            padding: "10px 15px",
-            border: "none",
-            borderRadius: "5px",
-            backgroundColor: "#00F",
-            color: "white",
-            fontSize: "16px",
-            cursor: "pointer",
-            transition: "background-color 0.3s",
-          }}
-        >
-          Go To
-        </button>
-      </a>
+      <button
+        onClick={handleClick}
+        style={{
+          margin: "20px 47vw",
+          padding: "10px 15px",
+          border: "none",
+          borderRadius: "5px",
+          backgroundColor: "#00F",
+          color: "white",
+          fontSize: "16px",
+          cursor: "pointer",
+          transition: "background-color 0.3s",
+        }}
+      >
+        Go To
+      </button>
     </div>
   );
 };
